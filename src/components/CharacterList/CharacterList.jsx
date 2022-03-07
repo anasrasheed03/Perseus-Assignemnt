@@ -10,12 +10,12 @@ const CharacterList = (props) => {
     <Row>
       <Col md={8}>
       <div id="viewRecords">Number of Results:
-        <span data-testid="fetch-records"> {items.length}</span>
+        <span id="fetch-records"> {items.length}</span>
       </div>
       </Col>
       <Col md={4}>
       <div id="totalRecords" className="text-right">Total Records:
-        <span data-testid="total-records">{props.info.count}</span>
+        <span id="total-records">{props.info.count}</span>
       </div>
       </Col>
       </Row>

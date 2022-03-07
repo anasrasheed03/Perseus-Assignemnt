@@ -1,3 +1,4 @@
+/// <reference types="Cypress" />
 describe("renders the home page", () => {
     beforeEach(() => {
         cy.visit("/")
@@ -64,26 +65,4 @@ describe("renders the home page", () => {
         cy.get('.submit-button').click();
     })
 
-    // it("View Characters List and load more until the last records", () => {
-    //     setInterval(async()=>{     
-    //     cy.get("[data-testid=total-records]").then(($span) => {
-    //         console.log($span.text())
-    //         let totalRecords = $span.text();
-
-    //         cy.get("[data-testid=fetch-records]").then(($span) => {
-    //             let fetchRecords = $span.text();
-    //             console.log(totalRecords)
-    //             console.log(fetchRecords)
-    //             console.log(totalRecords > Number(fetchRecords))
-    //             if (totalRecords > Number(fetchRecords)) {
-    //                     cy.get('.load-more-btn').click();                    
-    //             }
-    //         })           
-
-    //     })
-    // },500)
-    //     /* ==== Generated with Cypress Studio ==== */
-    //     cy.get('[data-testid="fetch-records"]').;
-    //     /* ==== End Cypress Studio ==== */
-    // })
 })
