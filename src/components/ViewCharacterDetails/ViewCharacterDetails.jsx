@@ -56,8 +56,8 @@ const ViewCharacterDetails = (props) => {
                 </div>
             </Card>
             {characterData.species !== '' ? (
-                <div>
-                    <h4>Recommended Characters for Specie: {characterData.species}</h4>
+                <div className="recommended-characters">
+                    <h4>Recommended Characters</h4>
                     <RecommendedCharacters species={characterData.species} />
                 </div>) : (''
             )}

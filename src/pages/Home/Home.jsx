@@ -121,7 +121,7 @@ const Home = () => {
                                 <h3>Searched for: {searchQueryString}</h3>
                             </div>
                         </Col>
-                        <Col md={2}>
+                        <Col md={2} className="text-right">
                             <button type="button" class="load-more-btn" id="resetSearch" onClick={() => resetSearch(api)}>Reset Search</button>
                         </Col>
                     </Row>

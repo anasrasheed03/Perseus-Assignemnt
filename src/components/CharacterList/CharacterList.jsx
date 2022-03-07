@@ -14,7 +14,7 @@ const CharacterList = (props) => {
       </div>
       </Col>
       <Col md={4}>
-      <div id="totalRecords">Total Records:
+      <div id="totalRecords" className="text-right">Total Records:
         <span data-testid="total-records">{props.info.count}</span>
       </div>
       </Col>
